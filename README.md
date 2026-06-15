@@ -66,26 +66,6 @@ http://127.0.0.1:5000
 
 ---
 
-## 📁 Project Structure
-
-```
-ambitionbox-job-analysis/
-│
-├── app.py
-├── templates/
-│   ├── base.html
-│   ├── index.html
-│   ├── results.html
-│   ├── visuals.html
-│
-├── static/
-│   └── css/
-│       └── style.css
-│
-├── screenshots/
-├── ambitionbox_companies.csv
-└── README.md
-```
 
 ---
 
