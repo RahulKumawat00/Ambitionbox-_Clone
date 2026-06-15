@@ -61,7 +61,7 @@ python app.py
 Open browser:
 
 ```
-http://127.0.0.1:5000
+http://127.0.0.1:5300
 ```
 
 ---
@@ -80,7 +80,7 @@ http://127.0.0.1:5000
 
 ## 👨‍💻 Author
 
-**Abhay Jangir**
+**RAHUL KUMAWAT**
 🚀 Aspiring Data Scientist | ML Engineer
 
 ---
