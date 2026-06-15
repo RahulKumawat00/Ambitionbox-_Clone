@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Insight Panel</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+
+  <div class="left">
+    <h1>AMBITION BOX JOB ANALYSIS</h1>
+  </div>
+
+ 
+  <div class="right">
+    <form class="form" method="post">
+
+      <div class="field">
+        <label>Location</label>
+        <select id="location" name="location">
+              <option value="">Select City</option>
+              {% for value in options %}
+                <option value="{{ value }}">{{ value }}</option>
+              {% endfor %}
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Industry</label>
+        <select id="industry" name="industry">
+          <option>Select Industry</option>
+          {% for value in options2 %}
+            <option value="{{ value }}">{{ value }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Job Type</label>
+        <select id="type" name="type">
+          <option>Select Job Type</option>
+          <option>Full-time</option>
+          <option>Part-time</option>
+          <option>Remote</option>
+          <option>Internship</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Rating</label>
+        <select id="rating" name="rating">
+          <option>Select Rating</option>
+          {% for value in options3 %}
+            <option value="{{ value }}">{{ value }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Select Output</label>
+        <div class="radio-group">
+          <label><input type="radio" name="output" value="Show Table">Show Table</label>
+          <label><input type="radio" name="output" value="Show Visualizations">Show Visualizations</label>
+        </div>
+      </div>      
+
+      <button type="submit">Submit →</button>
+
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>
